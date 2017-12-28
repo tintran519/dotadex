@@ -1,0 +1,14 @@
+<div class="container-fluid">
+
+  <h1>DOTA 2 HERO LIST</h1>
+
+  <div class="row">
+    <% @heroes.each do |hero| %>
+      <div class="col-md-3">
+        <h4><%= hero.id %>: <%= hero.name %></h4>
+        <image src="<%= hero.image_url %>" />
+      </div>
+    <% end %>
+  </div>
+
+</div>

@@ -51,8 +51,17 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
+    dota (0.0.21)
+      facets (~> 3.0)
+      faraday (~> 0.9.1)
+      faraday_middleware (~> 0.9.1)
     erubis (2.7.0)
     execjs (2.7.0)
+    facets (3.1.0)
+    faraday (0.9.2)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.2)
+      faraday (>= 0.7.4, < 0.10)
     ffi (1.9.18)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -78,6 +87,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.10.3)
     multi_json (1.12.2)
+    multipart-post (2.0.0)
     nio4r (2.1.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
@@ -112,6 +122,7 @@ GEM
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    rb-readline (0.5.4)
     sass (3.5.3)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -161,11 +172,13 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+  dota (~> 0.0.21)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
   puma (~> 3.0)
   rails (~> 5.0.5)
+  rb-readline
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
